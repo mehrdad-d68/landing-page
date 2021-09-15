@@ -1,0 +1,6 @@
+<ul class="list-group">
+    <li class='wheater-item list-group-item' *ngFor='let forecast of forecastdata'>
+        <p class="temp">{{forecast.temp | number:'1.0-0'}}°C</p>
+        <p class="day">{{forecast.datestring | date :'E'}}</p>
+    </li>
+</ul>
